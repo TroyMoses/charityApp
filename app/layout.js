@@ -1,7 +1,4 @@
 import './css/globals.css';
-import './css/bootstrap.css';
-import './css/css_slider.css';
-import './css/font-awesome.min.css';
 import './css/style.css';
 import Head from 'next/head';
 

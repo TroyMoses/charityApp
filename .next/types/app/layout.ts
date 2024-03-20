@@ -1,4 +1,4 @@
-// File: /home/troy/git/constrCompany/app/layout.js
+// File: /home/troy/git/charityApp/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
