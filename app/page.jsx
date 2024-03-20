@@ -101,7 +101,7 @@ export default function HomePage() {
                         <div className="logo">
                             <Image 
                                 src={logoImage} 
-                                height={80} 
+                                height={100} 
                                 alt="Foundation Logo" 
                                 className="rounded-md"/>
                         </div>
@@ -144,6 +144,14 @@ export default function HomePage() {
                     </div>
                 </header>
                 {/* Header ends here */}
+
+                <div className="container">
+                    <h1>Together We Can <span>Save Lives</span></h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus nobis, accusamus consequatur nemo sed voluptate minus amet provident et fugiat optio eligendi magni mollitia quas iste? Enim, in neque!</p>
+                    <button>
+                        Start With A Little
+                    </button>
+                </div>
             </div>
             {/* Home section ends here */}
         </div>
