@@ -12,6 +12,11 @@ button, div {
     box-sizing: border-box;
 }
 
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
 .fullContainer {
     width: 100%;
 }
@@ -65,6 +70,53 @@ header nav ul li .link {
 
 header nav ul li .link:hover {
     background-color: #e43a47;
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../public/images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span {
+    background-color: #e43a47;
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p {
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.banner button {
+    background-color: #e43a47;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600;
 }
 
 /* Home style end */
