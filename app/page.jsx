@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import logoImage from './public/images/logo.png'
+import logoImage from './public/images/logo1.png'
 
 export default function HomePage() {
 
@@ -94,14 +94,58 @@ export default function HomePage() {
     // };
     
     return (
-        <div className="fullContainer banner" id="homeSection">
-            <header>
-                <div className="container">
-                    <div className="logo">
-                        <Image src={logoImage} alt="Foundation Logo"/>
+        <div className="">
+            <div className="fullContainer banner" id="homeSection">
+                <header>
+                    <div className="container">
+                        <div className="logo">
+                            <Image 
+                                src={logoImage} 
+                                height={80} 
+                                alt="Foundation Logo" 
+                                className="rounded-md"/>
+                        </div>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <Link href="" className="link">
+                                        Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="link">
+                                        About Us
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="link">
+                                        Programs
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="link">
+                                        Education
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="link">
+                                        Gallery
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="link">
+                                        Join Us
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
+
                     </div>
-                </div>
-            </header>
+                </header>
+                {/* Header ends here */}
+            </div>
+            {/* Home section ends here */}
         </div>
     )
 }

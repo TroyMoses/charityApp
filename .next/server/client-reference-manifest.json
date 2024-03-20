@@ -56,9 +56,9 @@
         "async": false
       }
     },
-    "(app-client)/./app/public/images/logo.png": {
+    "(app-client)/./app/public/images/logo1.png": {
       "*": {
-        "id": "(sc_client)/./app/public/images/logo.png",
+        "id": "(sc_client)/./app/public/images/logo1.png",
         "name": "*",
         "chunks": [],
         "async": false
@@ -259,8 +259,8 @@
       ],
       "async": false
     },
-    "/home/troy/git/charityApp/app/public/images/logo.png": {
-      "id": "(app-client)/./app/public/images/logo.png",
+    "/home/troy/git/charityApp/app/public/images/logo1.png": {
+      "id": "(app-client)/./app/public/images/logo1.png",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
