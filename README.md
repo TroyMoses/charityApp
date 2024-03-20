@@ -1,7 +1,7 @@
 
-# Ozoh Engineering Company Website
+# NALONGO FOUNDATION
 
-Welcome to the Ozoh Engineering Company Website! This is a Next.js website for a fictional company that specializes in providing all engineering services. The website is designed to showcase the company's offerings and allow users to get in touch for inquiries and feedback.
+Welcome to the Nalongo FOundation Website! This is a Next.js website for a foundation that specializes in providing educational support especially to the young children. The website is designed to showcase the foundation's services and allow users to get in touch for inquiries and feedback. It also gives users chance to support the cause by donating some funds.
 
 ## Table of Contents
 
@@ -27,13 +27,13 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/TroyMoses/constrCompany.git
+   git clone https://github.com/TroyMoses/charityApp.git
    ```
 
 2. Change into the project directory:
 
    ```bash
-   cd constrCompany
+   cd charityApp
    ```
 
 3. Install the dependencies:
@@ -51,14 +51,6 @@ npm run dev
 ```
 
 The website will be accessible at [http://localhost:3000](http://localhost:3000).
-
-## Features
-
-- Home page showcasing the company's offerings
-- About page with information about the company
-- Services page listing different loan services
-- Contact page for users to get in touch and provide feedback
-- Database integration for storing user data
 
 ## Contributing
 
