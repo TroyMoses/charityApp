@@ -6,6 +6,10 @@ button, div {
     font-family: "Poppins", sans-serif;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +28,37 @@ p {
 .container {
     width: 1140px;
     margin: auto;
+}
+
+.sectionTitle {
+    width: 300px;
+    border-bottom: 3px solid #1f8cad;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after {
+    display: inline-block;
+    margin-top: 6px;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #1f8cad;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
 }
 
 /* Common style end */
@@ -69,7 +104,8 @@ header nav ul li .link {
 }
 
 header nav ul li .link:hover {
-    background-color: #e43a47;
+    background-color: #1f8cad;
+    border-radius: 5px;
 }
 
 .banner {
@@ -92,7 +128,7 @@ header nav ul li .link:hover {
 }
 
 .banner h1 span {
-    background-color: #e43a47;
+    background-color: #1f8cad;
     display: inline-block;
     line-height: 3.5rem;
     padding: 0 15px;
@@ -108,7 +144,7 @@ header nav ul li .link:hover {
 }
 
 .banner button {
-    background-color: #e43a47;
+    background-color: #1f8cad;
     border: 0;
     outline: none;
     color: #fff;
@@ -120,3 +156,64 @@ header nav ul li .link:hover {
 }
 
 /* Home style end */
+
+
+/* About section start */
+
+#aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+
+#aboutSection .cards > div {
+    width: 350px;
+    background-color: #efefef;
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 5px;
+    height: 215px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+
+#aboutSection .cards > div:hover {
+    width: 400px;
+    margin-top: -20px;
+    border-color: #1f8cad;
+    padding: 55px;
+    height: auto;
+}
+
+#aboutSection .cards > div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#aboutSection .cards > div p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#aboutSection .cards > div button {
+    border: 1px solid #1f8cad;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#aboutSection .cards > div:hover button {
+    background-color: #1f8cad;
+    color: #fff;
+}
+
+/* About section end */
