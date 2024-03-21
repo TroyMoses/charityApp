@@ -145,7 +145,7 @@ export default function HomePage() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="link">
+                                    <Link href="#joinSection" className="link">
                                         Join Us
                                     </Link>
                                 </li>
@@ -329,7 +329,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage1}/>
+                            <Image src={galleryImage1} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -337,7 +337,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage2}/>
+                            <Image src={galleryImage2} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -345,7 +345,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage3}/>
+                            <Image src={galleryImage3} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -353,7 +353,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage4}/>
+                            <Image src={galleryImage4} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -361,7 +361,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage5}/>
+                            <Image src={galleryImage5} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -369,7 +369,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage6}/>
+                            <Image src={galleryImage6} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -377,7 +377,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage7}/>
+                            <Image src={galleryImage7} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -385,7 +385,7 @@ export default function HomePage() {
                             <span className="title">
                                 Image Title
                             </span>
-                            <Image src={galleryImage8}/>
+                            <Image src={galleryImage8} className="galleryImage"/>
                         </div>
                         {/* Item ends here */}
 
@@ -394,6 +394,97 @@ export default function HomePage() {
                 </div>
             </section>
             {/* Gallery section ends here */}
+            
+            <section className="join" id="joinSection">
+                <div className="container">
+                    <div className="joinTitle">
+                        ADOPT A CHILD & <span>SAVE LIVES</span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, in quidem, voluptates delectus libero repellendus illo iusto inventore deserunt quis quas eum nesciunt, recusandae porro voluptas commodi tempora dolor magnam.
+                    </p>
+                    <button className="joinNow rounded">
+                        JOIN US
+                    </button>
+                    <button className="adoptBtn rounded">
+                        ADOPT A CHILD
+                    </button>
+                </div>
+            </section>
+            {/* Join us section ends here */}
+
+            <footer>
+                <div className="container">
+
+                    <div className="newsLetterContainer">
+                        <Image src={logoImage} 
+                        width={80}
+                        className="rounded-md pb-5" 
+                        alt="Logo Image"/>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam excepturi aliquid vitae rem voluptate beatae accusantium nulla
+                        </p>
+                        <input 
+                            type="text" 
+                            placeholder="Enter your email address" />
+                    </div>
+                    {/* NewsLetter container ends here */}
+
+                    <div className="linksContainer">
+                        <div className="title">
+                            Useful Links
+                        </div>
+                        <ul className="space-y-3">
+                            <li>
+                                <Link href="#homeSection" className="link">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#aboutSection" className="link">
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#programsSection" className="link">
+                                    Programs
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#educationSection" className="link">
+                                    Education
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#gallerySection" className="link">
+                                    Gallery
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#joinSection" className="link">
+                                    Join Us
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    {/* LinksContainer ends here */}
+
+                    <div className="connectContainer space-y-6">
+                        <div className="title">
+                            Connect With Us
+                        </div>
+                        <p>
+                            Saraswati Colony, Sehatpur, Faridabad<br />
+                            121003, Haryana
+                        </p>
+                        <p>info@ngo.com</p>
+                        <p>+256 777 234 897</p>
+                    </div>
+                    {/* ConnectContainer ends here */}
+
+                </div>
+            </footer>
+
 
         </div>
     )
