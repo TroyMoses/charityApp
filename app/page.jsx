@@ -6,6 +6,17 @@ import axios from 'axios';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import logoImage from './public/images/logo1.png'
+import bannerImage from './public/images/banner.jpg'
+import videoSrc from './public/video/childrens.mp4'
+import educationImage from './public/images/gallery/8.jpg'
+import galleryImage1 from './public/images/gallery/1.jpg'
+import galleryImage2 from './public/images/gallery/2.jpg'
+import galleryImage3 from './public/images/gallery/3.jpg'
+import galleryImage4 from './public/images/gallery/4.jpg'
+import galleryImage5 from './public/images/gallery/5.jpg'
+import galleryImage6 from './public/images/gallery/6.jpg'
+import galleryImage7 from './public/images/gallery/7.jpg'
+import galleryImage8 from './public/images/gallery/8.jpg'
 
 export default function HomePage() {
 
@@ -124,12 +135,12 @@ export default function HomePage() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="link">
+                                    <Link href="#educationSection" className="link">
                                         Education
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="link">
+                                    <Link href="#gallerySection" className="link">
                                         Gallery
                                     </Link>
                                 </li>
@@ -278,8 +289,111 @@ export default function HomePage() {
             {/* Programs section ends here */}
 
 
-            
+            <section className="education" id="educationSection">
+                
+                {/* <video autoPlay loop muted>
+                    <source src={videoSrc} type="video/mp4" />
+                </video> */}
+                <div>
+                    <Image src={bannerImage} alt="An image" className="educationImage"/>
+                </div>
+                
+                <div className="container">
+                    <div className="sectionTitle">
+                        Education
+                    </div>
+
+                    <div className="educationContainer">
+                        <h3>
+                            Education Is Essential For <br />
+                            <strong> BETTER FUTURE</strong>
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iusto officia nam, omnis necessitatibus delectus aspernatur sequi, blanditiis voluptatibus reprehenderit quis pariatur, corporis consequuntur dicta sapiente? Consequuntur delectus numquam quam.
+                        </p>
+                        <button>EXPLORE NOW</button>
+                    </div>
+                </div>
+            </section>
             {/* Education section ends here */}
+
+            <section className="gallery" id="gallerySection">
+                <div className="container">
+                    <div className="sectionTitle">
+                        Gallery
+                    </div>
+
+                    <div className="galleryContainer">
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage1}/>
+                        </div>
+                        {/* Item ends here */}
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage2}/>
+                        </div>
+                        {/* Item ends here */}
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage3}/>
+                        </div>
+                        {/* Item ends here */}
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage4}/>
+                        </div>
+                        {/* Item ends here */}
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage5}/>
+                        </div>
+                        {/* Item ends here */}
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage6}/>
+                        </div>
+                        {/* Item ends here */}
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage7}/>
+                        </div>
+                        {/* Item ends here */}
+
+                        <div className="item">
+                            <span className="title">
+                                Image Title
+                            </span>
+                            <Image src={galleryImage8}/>
+                        </div>
+                        {/* Item ends here */}
+
+                    </div>
+
+                </div>
+            </section>
+            {/* Gallery section ends here */}
 
         </div>
     )
