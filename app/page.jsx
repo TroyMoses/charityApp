@@ -119,7 +119,7 @@ export default function HomePage() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="link">
+                                    <Link href="#programsSection" className="link">
                                         Programs
                                     </Link>
                                 </li>
@@ -213,6 +213,73 @@ export default function HomePage() {
                 </div>
             </section>
             {/* About section ends here */}
+
+            <section className="programs" id="programsSection">
+                <div className="container">
+                    <h2 className="sectionTitle">
+                        Programs
+                    </h2>
+
+                    <div className="boxContainer flex justify-between">
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="programTitle">
+                                Education To Every Child
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="programTitle">
+                                Make Life Easier For Them
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="programTitle">
+                                Dedicating To Helping Kids
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="programTitle">
+                                Clean Water For People
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                    </div>
+                    {/* Box container ends here */}
+
+                </div>
+            </section>
+            {/* Programs section ends here */}
+
+
+            
+            {/* Education section ends here */}
 
         </div>
     )
