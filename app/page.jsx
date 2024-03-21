@@ -94,7 +94,7 @@ export default function HomePage() {
     // };
     
     return (
-        <div className="">
+        <div className="scroll-smooth">
             <div className="fullContainer banner" id="homeSection">
                 <header>
                     <div className="container">
@@ -106,15 +106,15 @@ export default function HomePage() {
                                 className="rounded-md"/>
                         </div>
 
-                        <nav>
+                        <nav className="pt-5">
                             <ul>
                                 <li>
-                                    <Link href="" className="link">
+                                    <Link href="#homeSection" className="link">
                                         Home
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="link">
+                                    <Link href="#aboutSection" className="link">
                                         About Us
                                     </Link>
                                 </li>
@@ -138,6 +138,11 @@ export default function HomePage() {
                                         Join Us
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link href="" className="link bg-amber-700 rounded-lg">
+                                        Donate
+                                    </Link>
+                                </li>
                             </ul>
                         </nav>
 
@@ -154,6 +159,61 @@ export default function HomePage() {
                 </div>
             </div>
             {/* Home section ends here */}
+
+            <section className="fullContainer" id="aboutSection">
+                <div className="container">
+                    <h2 className="sectionTitle">
+                        About Us
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nihil inventore labore esse et eos adipisci nam sit ad, doloremque nesciunt delectus porro qui? Ullam ipsa neque deserunt odio. Culpa?
+                    </p>
+                    <div className="cards">
+
+                        <div className="donationBox">
+                            <div className="title">
+                                Give Donation
+                            </div>
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
+                            </p>
+                            <button>
+                                Donate Now
+                            </button>
+                        </div>
+                        {/* Donation Box end */}
+
+                        <div className="volunteerBox">
+                            <div className="title">
+                                Become a volunteer
+                            </div>
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
+                            </p>
+                            <button>
+                                Become Now
+                            </button>
+                        </div>
+                        {/* Donation Box end */}
+
+                        <div className="scholarshipBox">
+                            <div className="title">
+                                Give Scholarship
+                            </div>
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
+                            </p>
+                            <button>
+                                Give Now
+                            </button>
+                        </div>
+                        {/* Donation Box end */}
+
+                    </div>
+                </div>
+            </section>
+            {/* About section ends here */}
+
         </div>
     )
 }
