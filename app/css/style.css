@@ -6,8 +6,15 @@ button, div {
     font-family: "Poppins", sans-serif;
 }
 
+/* html, body {
+    scroll-behavior: smooth;
+} */
 html, body {
     scroll-behavior: smooth;
+    /* Added the following line to make the page responsive */
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
 }
 
 * {
@@ -25,9 +32,15 @@ p {
     width: 100%;
 }
 
-.container {
+/* .container {
     width: 1140px;
     margin: auto;
+} */
+.container {
+    width: 90%;
+    margin: auto;
+    /* Set max-width to ensure responsiveness */
+    max-width: 1140px;
 }
 
 .sectionTitle {
@@ -70,13 +83,18 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 2;
+    /* Added padding for smaller screens */
+    padding: 15px 0;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
-    padding-right: 80px;
+    align-items: center;
+    /* Made the navigation responsive */
+    flex-wrap: wrap;
 }
+
 
 header .container .logo {
     padding: 15px 0;
@@ -87,19 +105,21 @@ header nav ul {
     list-style-type: none;
 }
 
+
 header nav ul li {
     display: inline-block;
 }
 
 header nav ul li .link {
     display: inline-block;
-    height: 75px;
-    line-height: 75px;
-    padding: 0 15px;
+    height: auto;
+    line-height: normal;
+    padding: 10px 15px;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 16px;
     color: #fff;
+    /* Added hover effect for smaller screens */
     transition: 0.3s;
 }
 
@@ -160,14 +180,14 @@ header nav ul li .link:hover {
 
 /* About section start */
 
-#aboutSection .cards {
+/* #aboutSection .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
     position: relative;
     height: 245px;
-}
+} */
 
 #aboutSection .cards > div {
     width: 350px;
@@ -176,17 +196,13 @@ header nav ul li .link:hover {
     color: #444;
     text-align: center;
     border-radius: 5px;
-    height: 215px;
+    height: auto;
     border: 1px solid #ccc;
     transition: 0.4s;
 }
 
 #aboutSection .cards > div:hover {
-    width: 400px;
-    margin-top: -20px;
     border-color: #1f8cad;
-    padding: 55px;
-    height: auto;
 }
 
 #aboutSection .cards > div .title {
@@ -231,7 +247,7 @@ header nav ul li .link:hover {
 } */
 
 .programs .boxContainer .box{
-    width: 250px;
+    width: auto;
     background-color: #fff;
     text-align: center;
     padding-bottom: 25px;
@@ -468,11 +484,11 @@ footer {
     padding-bottom: 40px;
 }
 
-footer .container {
+/* footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
-}
+} */
 
 footer .title {
     font-size: 20px;
@@ -524,17 +540,15 @@ footer .newsLetterContainer input {
         width: 100%;
         padding: 0 15px;
     }
+
+    .education .educationImage {
+        width: 1280px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
     .banner h1 {
         margin-top: 200px;
-    }
-    #aboutSection .cards {
-        justify-content: space-around;
-    }
-    #aboutSection .cards > div {
-        margin: 10px 0;
     }
 }
 
@@ -550,6 +564,7 @@ footer .newsLetterContainer input {
     .programs .boxContainer {
         grid-template-columns: repeat(2, 1fr);
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -594,9 +609,10 @@ footer .newsLetterContainer input {
 
     header nav ul li {
         display: block;
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
-    header nav ul li Link {
+    header nav ul li link {
         width: 300px;
         background-color: rgba(0, 0, 0, 0.6);
     }
@@ -618,7 +634,87 @@ footer .newsLetterContainer input {
         width: 350px;
     }
 
+    .programs .boxContainer {
+        column-gap: 10px;
+    }
+
+    .programs .container {
+        padding-right: 10px;
+    }
+
+    .education .educationContainer {
+        width: 96%;
+    }
+
+    .education .educationContainer h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .education .educationContainer p {
+        margin: 10px 0 20px;
+    }
+
+    .gallery .galleryContainer {
+        column-count: 2;
+    }
+    
 }
+
+@media screen and (max-width: 425px) {
+    .banner h1 {
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .banner button {
+        margin-bottom: 10px;
+    }
+
+    #aboutSection p {
+        text-align: justify;
+    }
+
+    #aboutSection .cards > div:hover {
+        width: 400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+
+    .programs .boxContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .education .educationImage {
+        width: 1400px;
+    }
+
+    .education .educationContainer {
+        width: 93%;
+    }
+
+    .gallery .galleryContainer {
+        column-count: 1;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .education .educationContainer h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .banner h1 {
+        margin-top: 100px;
+    }
+
+}
+
 
 /* Responsive code ends here */
 

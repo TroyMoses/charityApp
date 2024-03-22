@@ -179,7 +179,7 @@ export default function HomePage() {
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nihil inventore labore esse et eos adipisci nam sit ad, doloremque nesciunt delectus porro qui? Ullam ipsa neque deserunt odio. Culpa?
                     </p>
-                    <div className="cards">
+                    <div className="cards flex flex-col md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-4 mt-5">
 
                         <div className="donationBox">
                             <div className="title">
@@ -226,16 +226,16 @@ export default function HomePage() {
             {/* About section ends here */}
 
             <section className="programs" id="programsSection">
-                <div className="container">
+                <div className="container mx-5">
                     <h2 className="sectionTitle">
                         Programs
                     </h2>
 
-                    <div className="boxContainer flex justify-between">
+                    <div className="boxContainer md:flex grid  md:justify-center md:space-x-12 md:flex-row">
 
                         <div className="box flex flex-col">
                             <div className="cardImage"></div>
-                            <div className="programTitle">
+                            <div className="programTitle px-5">
                                 Education To Every Child
                             </div>
                             <div className="donationCount">
@@ -247,7 +247,7 @@ export default function HomePage() {
 
                         <div className="box flex flex-col">
                             <div className="cardImage"></div>
-                            <div className="programTitle">
+                            <div className="programTitle px-5">
                                 Make Life Easier For Them
                             </div>
                             <div className="donationCount">
@@ -259,7 +259,7 @@ export default function HomePage() {
 
                         <div className="box flex flex-col">
                             <div className="cardImage"></div>
-                            <div className="programTitle">
+                            <div className="programTitle px-5">
                                 Dedicating To Helping Kids
                             </div>
                             <div className="donationCount">
@@ -271,7 +271,7 @@ export default function HomePage() {
 
                         <div className="box flex flex-col">
                             <div className="cardImage"></div>
-                            <div className="programTitle">
+                            <div className="programTitle px-5">
                                 Clean Water For People
                             </div>
                             <div className="donationCount">
@@ -413,10 +413,10 @@ export default function HomePage() {
             </section>
             {/* Join us section ends here */}
 
-            <footer>
-                <div className="container">
+            <footer className="">
+                <div className="container flex md:flex-row md:justify-between md:space-x-10 space-y-5 flex-col">
 
-                    <div className="newsLetterContainer">
+                    <div className="newsLetterContainer md:w-96">
                         <Image src={logoImage} 
                         width={80}
                         className="rounded-md pb-5" 
