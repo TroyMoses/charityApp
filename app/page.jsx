@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import logoImage from './public/images/logo1.png'
 import bannerImage from './public/images/banner.jpg'
-import videoSrc from './public/video/childrens.mp4'
 import educationImage from './public/images/gallery/8.jpg'
 import galleryImage1 from './public/images/gallery/1.jpg'
 import galleryImage2 from './public/images/gallery/2.jpg'
@@ -20,90 +19,6 @@ import galleryImage8 from './public/images/gallery/8.jpg'
 
 export default function HomePage() {
 
-    const router = useRouter();
-    // const [client, setClient] = React.useState({
-    //     name: "",
-    //     number: "",
-    //     service: "",
-    //     email: "",
-    //     message: ""
-    // });
-    // const [clientEmail, setClientEmail] = React.useState({
-    //     newsemail: ""
-    // });
-
-    // const [loading, setLoading] = React.useState(false);
-
-    // const [buttonDisabled, setButtonDisabled] = React.useState(true);
-
-    // useEffect(() => {
-    //     if(client.name.length > 0 && client.number.length > 0 && client.service.length > 0 && client.email.length > 0 && client.message.length > 0) {
-    //         setButtonDisabled(false);
-    //     } else {
-    //         setButtonDisabled(true);
-    //     }
-    // }, [client]);
-
-    // const handleSubmit = async(e) => {
-    //     e.preventDefault();
-    //     try {
-    //         setLoading(true);
-    //         const res = await fetch('/api/clients', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             },
-    //             body: JSON.stringify(client)
-    //         });
-    //         const data = await res.json();
-    //         if(data.success) {
-    //             setClient({
-    //                 name: "",
-    //                 number: "",
-    //                 service: "",
-    //                 email: "",
-    //                 message: ""
-    //             });
-    //             setLoading(false);
-    //         } else {
-    //             setLoading(false);
-    //         }
-    //         router.push('/services');
-    //     } catch (error) {
-    //         console.error(error.message);
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
-
-    // const handleEmailSubmit = async(e) => {
-    //     e.preventDefault();
-    //     try {
-    //         setLoading(true);
-    //         const res = await fetch('/api/emails', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             },
-    //             body: JSON.stringify(clientEmail)
-    //         });
-    //         const data = await res.json();
-    //         if(data.success) {
-    //             setClientEmail({
-    //                 newsemail: ""
-    //             });
-    //             setLoading(false);
-    //         } else {
-    //             setLoading(false);
-    //         }
-    //         router.push('/contact');
-    //     } catch (error) {
-    //         console.error(error.message);
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
-    
     return (
         <div className="scroll-smooth">
             <div className="fullContainer banner" id="homeSection">
@@ -120,17 +35,17 @@ export default function HomePage() {
                         <nav className="pt-5">
                             <ul>
                                 <li>
-                                    <Link href="#homeSection" className="link">
+                                    <Link href="/" className="link">
                                         Home
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#aboutSection" className="link">
+                                    <Link href="/about" className="link">
                                         About Us
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#programsSection" className="link">
+                                    <Link href="/programs" className="link">
                                         Programs
                                     </Link>
                                 </li>
@@ -150,7 +65,7 @@ export default function HomePage() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="link bg-amber-700 rounded-lg">
+                                    <Link href="#donateSection" className="link bg-amber-700 rounded-lg">
                                         Donate
                                     </Link>
                                 </li>
@@ -163,9 +78,13 @@ export default function HomePage() {
 
                 <div className="container">
                     <h1>Together We Can <span>Save Lives</span></h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus nobis, accusamus consequatur nemo sed voluptate minus amet provident et fugiat optio eligendi magni mollitia quas iste? Enim, in neque!</p>
+                    <p className="text-lg">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus nobis, accusamus consequatur nemo sed voluptate minus amet provident et fugiat optio eligendi magni mollitia quas iste? Enim, in neque!
+                    </p>
                     <button>
-                        Start With A Little
+                        <Link href="#donateSection">
+                            Start With A Little
+                        </Link>
                     </button>
                 </div>
             </div>
@@ -176,118 +95,21 @@ export default function HomePage() {
                     <h2 className="sectionTitle">
                         About Us
                     </h2>
-                    <p>
+                    <p className="text-lg text-center font-normal">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nihil inventore labore esse et eos adipisci nam sit ad, doloremque nesciunt delectus porro qui? Ullam ipsa neque deserunt odio. Culpa?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illo quo cumque earum! Illum, itaque molestias accusamus numquam ab veniam fugit iste nam obcaecati eaque, deserunt laboriosam repudiandae repellendus quisquam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas qui veritatis fugit quasi magnam voluptas harum ad doloremque quis culpa quibusdam, maxime sunt in a maiores dolore odit! Odio.
                     </p>
-                    <div className="cards flex flex-col md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-4 mt-5">
-
-                        <div className="donationBox">
-                            <div className="title">
-                                Give Donation
-                            </div>
-                            <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
-                            </p>
-                            <button>
-                                Donate Now
-                            </button>
-                        </div>
-                        {/* Donation Box end */}
-
-                        <div className="volunteerBox">
-                            <div className="title">
-                                Become a volunteer
-                            </div>
-                            <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
-                            </p>
-                            <button>
-                                Become Now
-                            </button>
-                        </div>
-                        {/* Donation Box end */}
-
-                        <div className="scholarshipBox">
-                            <div className="title">
-                                Give Scholarship
-                            </div>
-                            <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
-                            </p>
-                            <button>
-                                Give Now
-                            </button>
-                        </div>
-                        {/* Donation Box end */}
-
+                    <div className="text-center mt-8">
+                        <button className="bg-blue-500 text-white px-3 py-2 rounded">
+                            <Link href="/about">
+                                Explore More About Us
+                            </Link>
+                        </button>
                     </div>
                 </div>
             </section>
             {/* About section ends here */}
-
-            <section className="programs" id="programsSection">
-                <div className="container mx-5">
-                    <h2 className="sectionTitle">
-                        Programs
-                    </h2>
-
-                    <div className="boxContainer md:flex grid  md:justify-center md:space-x-12 md:flex-row">
-
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="programTitle px-5">
-                                Education To Every Child
-                            </div>
-                            <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div>
-                            <button className=" w-40">Donate Now</button>
-                        </div>
-                        {/* Box ends here */}
-
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="programTitle px-5">
-                                Make Life Easier For Them
-                            </div>
-                            <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div>
-                            <button className=" w-40">Donate Now</button>
-                        </div>
-                        {/* Box ends here */}
-
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="programTitle px-5">
-                                Dedicating To Helping Kids
-                            </div>
-                            <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div>
-                            <button className=" w-40">Donate Now</button>
-                        </div>
-                        {/* Box ends here */}
-
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="programTitle px-5">
-                                Clean Water For People
-                            </div>
-                            <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div>
-                            <button className=" w-40">Donate Now</button>
-                        </div>
-                        {/* Box ends here */}
-
-                    </div>
-                    {/* Box container ends here */}
-
-                </div>
-            </section>
-            {/* Programs section ends here */}
-
 
             <section className="education" id="educationSection">
                 
@@ -300,7 +122,7 @@ export default function HomePage() {
                 
                 <div className="container">
                     <div className="sectionTitle">
-                        Education
+                        <h1 className="md:text-white text-black font-normal">Education</h1>
                     </div>
 
                     <div className="educationContainer">
@@ -308,14 +130,81 @@ export default function HomePage() {
                             Education Is Essential For <br />
                             <strong> BETTER FUTURE</strong>
                         </h3>
-                        <p>
+                        <p className="text-lg">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iusto officia nam, omnis necessitatibus delectus aspernatur sequi, blanditiis voluptatibus reprehenderit quis pariatur, corporis consequuntur dicta sapiente? Consequuntur delectus numquam quam.
                         </p>
-                        <button>EXPLORE NOW</button>
+                        <button>
+                            <Link href="/education">
+                                EXPLORE NOW
+                            </Link>
+                        </button>
                     </div>
                 </div>
             </section>
             {/* Education section ends here */}
+
+            <section className="programs" id="programsSection">
+                <div className="container mx-5">
+                    <h2 className="sectionTitle">
+                        More Programs
+                    </h2>
+
+                    <div className="boxContainer md:flex grid  md:justify-center md:space-x-12 md:flex-row">
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="programTitle px-5">
+                                Make Life Easier For Them
+                            </div>
+                            <div className="programDesc">
+                                <p className="px-2">
+                                    Lorem ipsum dolor, adipisicing elit<br />
+                                    sit amet consectetur . <br />
+                                    Quos voluptates eveniet 
+                                </p>
+                            </div>
+                            <button className=" w-40">Explore More</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="programTitle px-5">
+                                Dedicating To Helping Kids
+                            </div>
+                            <div className="programDesc">
+                                <p className="px-2">
+                                    Lorem ipsum dolor, adipisicing elit<br />
+                                    sit amet consectetur . <br />
+                                    Quos voluptates eveniet 
+                                </p>
+                            </div>
+                            <button className=" w-40">Explore More</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="programTitle px-5">
+                                Clean Water For People
+                            </div>
+                            <div className="programDesc">
+                                <p className="px-2">
+                                    Lorem ipsum dolor, adipisicing elit<br />
+                                    sit amet consectetur . <br />
+                                    Quos voluptates eveniet 
+                                </p>
+                            </div>
+                            <button className=" w-40">Explore More</button>
+                        </div>
+                        {/* Box ends here */}
+
+                    </div>
+                    {/* Box container ends here */}
+
+                </div>
+            </section>
+            {/* Programs section ends here */}
 
             <section className="gallery" id="gallerySection">
                 <div className="container">
@@ -391,16 +280,87 @@ export default function HomePage() {
 
                     </div>
 
+                    <div className="text-center mt-8">
+                        <button className="bg-blue-500 text-white px-3 py-2 rounded">
+                            <Link href="/gallery">
+                                Explore Our Gallery
+                            </Link>
+                        </button>
+                    </div>
+
                 </div>
             </section>
             {/* Gallery section ends here */}
+
+            <section className="donate" id="donateSection">
+                <div className="container mx-5">
+                    <h2 className="sectionTitle">
+                        Make A Donation
+                    </h2>
+
+                    <div className="boxContainer md:flex grid  md:justify-center md:space-x-12 md:flex-row">
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="donateTitle px-5">
+                                Education To Every Child
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="donateTitle px-5">
+                                Make Life Easier For Them
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="donateTitle px-5">
+                                Dedicating To Helping Kids
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage"></div>
+                            <div className="donateTitle px-5">
+                                Clean Water For People
+                            </div>
+                            <div className="donationCount">
+                                Donation Goal : <span>$9845</span>
+                            </div>
+                            <button className=" w-40">Donate Now</button>
+                        </div>
+                        {/* Box ends here */}
+
+                    </div>
+                    {/* Box container ends here */}
+
+                </div>
+            </section>
+            {/* Donate section ends here */}
             
             <section className="join" id="joinSection">
                 <div className="container">
                     <div className="joinTitle">
                         ADOPT A CHILD & <span>SAVE LIVES</span>
                     </div>
-                    <p>
+                    <p className="text-lg">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, in quidem, voluptates delectus libero repellendus illo iusto inventore deserunt quis quas eum nesciunt, recusandae porro voluptas commodi tempora dolor magnam.
                     </p>
                     <button className="joinNow rounded">
