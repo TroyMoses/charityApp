@@ -45,7 +45,7 @@ export default function HomePage() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/programs" className="link">
+                                    <Link href="#programsSection" className="link">
                                         Programs
                                     </Link>
                                 </li>
@@ -163,7 +163,11 @@ export default function HomePage() {
                                     Quos voluptates eveniet 
                                 </p>
                             </div>
-                            <button className=" w-40">Explore More</button>
+                            <button className=" w-40">
+                                <Link href="/programs">
+                                    Explore More
+                                </Link>
+                            </button>
                         </div>
                         {/* Box ends here */}
 
@@ -179,7 +183,11 @@ export default function HomePage() {
                                     Quos voluptates eveniet 
                                 </p>
                             </div>
-                            <button className=" w-40">Explore More</button>
+                            <button className=" w-40">
+                                <Link href="/programs">
+                                    Explore More
+                                </Link>
+                            </button>
                         </div>
                         {/* Box ends here */}
 
@@ -195,7 +203,11 @@ export default function HomePage() {
                                     Quos voluptates eveniet 
                                 </p>
                             </div>
-                            <button className=" w-40">Explore More</button>
+                            <button className=" w-40">
+                                <Link href="/programs">
+                                    Explore More
+                                </Link>
+                            </button>
                         </div>
                         {/* Box ends here */}
 
