@@ -197,7 +197,7 @@ header nav ul li .link:hover {
     text-align: center;
     border-radius: 5px;
     height: auto;
-    border: 1px solid #ccc;
+    border: 2px solid #a3a2a2;
     transition: 0.4s;
 }
 
@@ -217,7 +217,7 @@ header nav ul li .link:hover {
 }
 
 #aboutSection .cards > div button {
-    border: 1px solid #1f8cad;
+    border: 2px solid #a3a2a2;
     outline: none;
     padding: 7px 15px;
     margin-top: 15px;
@@ -234,17 +234,27 @@ header nav ul li .link:hover {
 
 /* About section end */
 
-/* Program section start */
+/* Donation section start */
+
+.donate {
+    background-color: #e2e2e2;
+}
 
 .programs {
     background-color: #e2e2e2;
 }
 
-/* .programs.boxContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-} */
+
+.donate .boxContainer .box{
+    width: auto;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
 
 .programs .boxContainer .box{
     width: auto;
@@ -257,6 +267,16 @@ header nav ul li .link:hover {
     margin-bottom: 15px;
 }
 
+.donate .boxContainer .box .cardImage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
 .programs .boxContainer .box .cardImage {
     width: 100%;
     height: 300px;
@@ -265,6 +285,19 @@ header nav ul li .link:hover {
     position: relative;
     overflow: hidden;
     border-radius: 5px 5px 0 0;
+}
+
+.donate .boxContainer .box .cardImage::after {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
 }
 
 .programs .boxContainer .box .cardImage::after {
@@ -280,46 +313,97 @@ header nav ul li .link:hover {
     transition: 0.4s;
 }
 
-.programs .boxContainer .box:nth-child(1) .cardImage,
-.programs .boxContainer .box:nth-child(1) .cardImage::after {
+.donate .boxContainer .box:nth-child(1) .cardImage,
+.donate .boxContainer .box:nth-child(1) .cardImage::after {
     background-image: url("../public/images/programs/1.jpg");
 }
 
-.programs .boxContainer .box:nth-child(2) .cardImage,
-.programs .boxContainer .box:nth-child(2) .cardImage::after {
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.donate .boxContainer .box:nth-child(1) .cardImage::after {
+    background-image: url("../public/images/programs/1.jpg");
+}
+
+.donate .boxContainer .box:nth-child(2) .cardImage,
+.donate .boxContainer .box:nth-child(2) .cardImage::after {
     background-image: url("../public/images/programs/2.jpg");
 }
 
-.programs .boxContainer .box:nth-child(3) .cardImage,
-.programs .boxContainer .box:nth-child(3) .cardImage::after {
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.donate .boxContainer .box:nth-child(2) .cardImage::after {
+    background-image: url("../public/images/programs/2.jpg");
+}
+
+.donate .boxContainer .box:nth-child(3) .cardImage,
+.donate .boxContainer .box:nth-child(3) .cardImage::after {
     background-image: url("../public/images/programs/3.jpg");
 }
 
-.programs .boxContainer .box:nth-child(4) .cardImage,
-.programs .boxContainer .box:nth-child(4) .cardImage::after {
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.donate .boxContainer .box:nth-child(3) .cardImage::after {
+    background-image: url("../public/images/programs/3.jpg");
+}
+
+.donate .boxContainer .box:nth-child(4) .cardImage,
+.donate .boxContainer .box:nth-child(4) .cardImage::after {
     background-image: url("../public/images/programs/4.jpg");
+}
+
+.donate .boxContainer .box:hover .cardImage::after {
+    top: 100%;
 }
 
 .programs .boxContainer .box:hover .cardImage::after {
     top: 100%;
 }
 
-.programs .boxContainer .box .programTitle {
+.donate .boxContainer .box .donateTitle {
     font-size: 16px;
     margin-top: 15px;
     font-weight: 600;
     color: #444;
 }
 
-.programs .boxContainer .box .donationCount {
+.programs .boxContainer .box .programTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #1a1919;
+}
+
+.donate .boxContainer .box .donationCount {
     font-size: 13px;
     font-weight: 600;
     color: #444;
     margin-top: 10px;
 }
 
+.programs .boxContainer .box .programDesc {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
+
+.donate .boxContainer .box .donationCount span {
+    color: #1f8cad;
+}
+
 .programs .boxContainer .box .donationCount span {
     color: #1f8cad;
+}
+
+.donate .boxContainer .box button {
+    position: relative;
+    left: 50%;
+    background-color: #1f8cad;
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }
 
 .programs .boxContainer .box button {
@@ -337,7 +421,7 @@ header nav ul li .link:hover {
 }
 
 
-/* Program section end */
+/* Donate section end */
 
 /* Education section start */
 
@@ -561,6 +645,10 @@ footer .newsLetterContainer input {
         font-size: 2.5rem;
     }
 
+    .donate .boxContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .programs .boxContainer {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -634,8 +722,16 @@ footer .newsLetterContainer input {
         width: 350px;
     }
 
+    .donate .boxContainer {
+        column-gap: 10px;
+    }
+
     .programs .boxContainer {
         column-gap: 10px;
+    }
+
+    .donate .container {
+        padding-right: 10px;
     }
 
     .programs .container {
@@ -680,6 +776,10 @@ footer .newsLetterContainer input {
         width: 400px;
         margin-top: 10px;
         padding: 35px;
+    }
+
+    .donate .boxContainer {
+        grid-template-columns: 1fr;
     }
 
     .programs .boxContainer {
