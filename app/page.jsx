@@ -77,13 +77,13 @@ export default function HomePage() {
                 {/* Header ends here */}
 
                 <div className="container">
-                    <h1>Together We Can <span>Save Lives</span></h1>
+                    <h1>Education Unlocks Future <span>Possibilities</span></h1>
                     <p className="text-lg">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus nobis, accusamus consequatur nemo sed voluptate minus amet provident et fugiat optio eligendi magni mollitia quas iste? Enim, in neque!
+                        For 15 years, we have committed to providing access to quality education for volunarable yet talented refugees. Donate today and help us create more refugee change makers like Ntakamaze Nziyonvira.
                     </p>
-                    <button>
+                    <button className="mb-5">
                         <Link href="#donateSection">
-                            Start With A Little
+                            <span className="text-lg">Sponsor A Child Now</span>
                         </Link>
                     </button>
                 </div>
@@ -95,10 +95,12 @@ export default function HomePage() {
                     <h2 className="sectionTitle">
                         About Us
                     </h2>
-                    <p className="text-lg text-center font-normal">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nihil inventore labore esse et eos adipisci nam sit ad, doloremque nesciunt delectus porro qui? Ullam ipsa neque deserunt odio. Culpa?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illo quo cumque earum! Illum, itaque molestias accusamus numquam ab veniam fugit iste nam obcaecati eaque, deserunt laboriosam repudiandae repellendus quisquam.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas qui veritatis fugit quasi magnam voluptas harum ad doloremque quis culpa quibusdam, maxime sunt in a maiores dolore odit! Odio.
+                    <p className="text-lg font-normal">
+                        At Nalongo Lwokyaza Foundation, we're a community of changemakers driven by the belief that Education is the key to future possibilities. Founded in 2017 by Nalongo Lwokyaza, we've grown from a small group of passionate individuals into a force for good, tackling child sponsorship with innovative solutions and unwavering dedication.
+                        <br /><br />
+                        Our team is fueled by a deep commitment to charity. We're a diverse group of patriots and volunteers who bring a wealth of experience and expertise to the table. Together, we work collaboratively to develop impactful programs that directly benefit native and foreign refugee children.
+                        <br /><br />
+                        Whether you're a passionate volunteer, a generous donor, or simply someone who believes in a better tomorrow, we welcome you to join our movement. Together, we can create a lasting positive impact on the lives of refugee children.
                     </p>
                     <div className="text-center mt-8">
                         <button className="bg-blue-500 text-white px-3 py-2 rounded">

@@ -10,7 +10,7 @@ import logoImage from '../public/images/logo1.png'
 export default function HomePage() {
   
     return (
-        <div className="scroll-smooth">
+        <div className="scroll-smooth text-gray-800">
             <div className="fullContainer banner" id="homeSection">
                 <header>
                     <div className="container">
@@ -69,8 +69,7 @@ export default function HomePage() {
                 <div className="container">
                     <h1><span>About Us</span></h1>
                     <p className="text-lg">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus nobis, accusamus consequatur nemo sed voluptate minus amet provident et fugiat optio eligendi magni mollitia quas iste? Enim, in neque!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem sint vel harum magnam ducimus itaque natus soluta debitis? Ab consequuntur excepturi omnis nulla accusantium dolorum iste voluptatem pariatur non vel!
+                        Our foundation is committed to paying particular attention to children and youth within their programs who have suffered from violence and trauma, and aspires to sustain support for young people who have suffered trauma. Nalongo Lwokyaza Foundation also recognizes the power of functional education as a critical part of healing conflict and creating social cohesion in communities.
                     </p>
                     <button className="mb-5">
                         <Link href="#aboutSection">
@@ -83,50 +82,83 @@ export default function HomePage() {
 
             <section className="fullContainer" id="aboutSection">
                 <div className="container">
-                    <h2 className="sectionTitle">
+                    <h2 className="sectionTitle text-[#1f8cad]">
                         Our Foundation
                     </h2>
-                    <p className="text-center text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, amet! Molestiae quam, adipisci fugit molestias earum numquam aliquam dignissimos quidem iusto vero sunt facilis perspiciatis maxime delectus ad itaque accusamus!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusamus tempora assumenda tempore veritatis quas odio cumque praesentium doloremque, possimus, labore sint. Sapiente dolorum similique optio mollitia harum fuga repellendus.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus, eaque tenetur quo sapiente quae tempora iure culpa sit quod placeat unde illo animi amet similique. Quam quod praesentium doloremque
-                    </p>
+                    <div className="space-y-2 text-lg">
+                        <h2 className="font-bold text-2xl text-[#1f8cad]">
+                            Our Mission
+                        </h2>
+                        <p className="text-lg">
+                            We seek to transform Africa by providing access to quality education for conflict-affected children, empowering socially responsible leaders and entrepreneurs to unite communities and create sustainable peace, love and prosperity.
+                        </p>
+
+                        <h2 className="font-bold text-2xl text-[#1f8cad]">
+                            Our Vision
+                        </h2>
+                        <p className="text-lg">
+                            United, developed and peaceful communities in Africa.
+                        </p>
+
+                        <h2 className="font-bold text-2xl text-[#1f8cad]">
+                            Our Core Values
+                        </h2>
+                        <div className="text-lg">
+                            <span className="text-[#1f8cad] font-semibold">Integrity:</span><br /> We commit to honesty, transparency, reliability and building trust.
+                            <br />
+
+                            <span className="text-[#1f8cad] font-semibold">Compassion:</span><br /> We are deeply aware of the suffering of others, and have a strong desire to alleviate it.
+                            <br />
+
+                            <span className="text-[#1f8cad] font-semibold">Diversity:</span><br /> We understand and appreciate that every person is unique; recognizing the strength that emanates from our collective differences such as race, ethnicity, nationality, gender, religious beliefs, and socio-economic status.
+                            <br />
+
+                            <span className="text-[#1f8cad] font-semibold">Community Responsibility:</span><br /> We commit to fulfilling promises made to each other.
+                            <br />
+
+                            <span className="text-[#1f8cad] font-semibold">Excellence:</span><br /> We constantly strive for success and being the best in all that we do.
+                            <br />
+
+                            <span className="text-[#1f8cad] font-semibold">Boldness:</span><br /> We commit to remain courageous in the fight against illiteracy, poverty and tribalism in our communities.
+                        </div>
+                        
+                    </div>
                     <div className="cards text-lg flex flex-col md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-4 mt-8 font-semibold">
 
                         <div className="donationBox">
-                            <div className="title">
+                            <div className="title text-[#1f8cad]">
                                 Give Donation
                             </div>
-                            <p>
+                            <p className="">
                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
                             </p>
-                            <button>
+                            <button className="text-[#1f8cad]">
                                 Donate Now
                             </button>
                         </div>
                         {/* Donation Box end */}
 
                         <div className="volunteerBox">
-                            <div className="title">
+                            <div className="title text-[#1f8cad]">
                                 Become a volunteer
                             </div>
                             <p>
                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
                             </p>
-                            <button>
+                            <button className="text-[#1f8cad]">
                                 Become Now
                             </button>
                         </div>
                         {/* Donation Box end */}
 
                         <div className="scholarshipBox">
-                            <div className="title">
+                            <div className="title text-[#1f8cad]">
                                 Give Scholarship
                             </div>
                             <p>
                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
                             </p>
-                            <button>
+                            <button className="text-[#1f8cad]">
                                 Give Now
                             </button>
                         </div>
