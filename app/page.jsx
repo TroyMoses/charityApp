@@ -35,7 +35,7 @@ export default function HomePage() {
                         <nav className="pt-5">
                             <ul>
                                 <li>
-                                    <Link href="/" className="link">
+                                    <Link href="/" className="link bg-[#1f8cad] rounded-md">
                                         Home
                                     </Link>
                                 </li>
