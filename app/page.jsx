@@ -103,7 +103,7 @@ export default function HomePage() {
                         Whether you're a passionate volunteer, a generous donor, or simply someone who believes in a better tomorrow, we welcome you to join our movement. Together, we can create a lasting positive impact on the lives of refugee children.
                     </p>
                     <div className="text-center mt-8">
-                        <button className="bg-blue-500 text-white px-3 py-2 rounded">
+                        <button className="bg-[#1f8cad] text-white px-3 py-2 rounded">
                             <Link href="/about">
                                 Explore More About Us
                             </Link>
@@ -151,18 +151,35 @@ export default function HomePage() {
                         More Programs
                     </h2>
 
-                    <div className="boxContainer md:flex grid  md:justify-center md:space-x-12 md:flex-row">
+                    <div className="boxContainer md:flex flex flex-col  md:justify-center md:space-x-12 md:flex-row">
 
                         <div className="box flex flex-col">
-                            <div className="cardImage"></div>
+                            <div className="cardImage hidden md:flex"></div>
                             <div className="programTitle px-5">
-                                Make Life Easier For Them
+                                <span className="text-xl text-[#1f8cad]">EDUCATION PROGRAMS</span>
                             </div>
                             <div className="programDesc">
                                 <p className="px-2">
-                                    Lorem ipsum dolor, adipisicing elit<br />
-                                    sit amet consectetur . <br />
-                                    Quos voluptates eveniet 
+                                    We empower individuals through knowledge. 
+                                    <br />Our educational programs provide essential skills and resources, focusing on all education levels levels, literacy, STEM fields, job training. By investing in education, we unlock potential and create pathways to a brighter future. 
+                                </p>
+                            </div>
+                            <button className=" w-40">
+                                <Link href="/education">
+                                    Explore More
+                                </Link>
+                            </button>
+                        </div>
+                        {/* Box ends here */}
+
+                        <div className="box flex flex-col">
+                            <div className="cardImage hidden md:flex"></div>
+                            <div className="programTitle px-5">
+                                <span className="text-xl text-[#1f8cad]">COMMUNITY BUILDING</span>
+                            </div>
+                            <div className="programDesc">
+                                <p className="px-2">
+                                    We believe strong communities are the foundation<br /> for positive change. Through workshops, events, and mentorship programs, we foster collaboration, build trust, and empower communities to solve problems together. We create a space for shared goals and lasting connections.
                                 </p>
                             </div>
                             <button className=" w-40">
@@ -174,35 +191,13 @@ export default function HomePage() {
                         {/* Box ends here */}
 
                         <div className="box flex flex-col">
-                            <div className="cardImage"></div>
+                            <div className="cardImage hidden md:flex"></div>
                             <div className="programTitle px-5">
-                                Dedicating To Helping Kids
+                            <span className="text-xl text-[#1f8cad]">CLEAN WATER FOR PEOPLE</span>
                             </div>
                             <div className="programDesc">
                                 <p className="px-2">
-                                    Lorem ipsum dolor, adipisicing elit<br />
-                                    sit amet consectetur . <br />
-                                    Quos voluptates eveniet 
-                                </p>
-                            </div>
-                            <button className=" w-40">
-                                <Link href="/programs">
-                                    Explore More
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
-
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="programTitle px-5">
-                                Clean Water For People
-                            </div>
-                            <div className="programDesc">
-                                <p className="px-2">
-                                    Lorem ipsum dolor, adipisicing elit<br />
-                                    sit amet consectetur . <br />
-                                    Quos voluptates eveniet 
+                                    Access to clean water is a fundamental<br /> human right. We implement sustainable solutions like well construction, rainwater harvesting, and hygiene education. By availing clean water, we promote health, dignity, and a foundation for a thriving community. 
                                 </p>
                             </div>
                             <button className=" w-40">
@@ -295,7 +290,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="text-center mt-8">
-                        <button className="bg-blue-500 text-white px-3 py-2 rounded">
+                        <button className="bg-[#1f8cad] text-white px-3 py-2 rounded">
                             <Link href="/gallery">
                                 Explore Our Gallery
                             </Link>

@@ -7,6 +7,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import logoImage from '../public/images/logo1.png'
 import educationImage1 from '../public/images/programs/1.jpg';
+import educationImage2 from '../public/images/programs/2.jpg';
+import educationImage3 from '../public/images/programs/3.jpg';
 import bannerImage from '../public/images/banner.jpg'
 
 export default function HomePage() {
@@ -83,7 +85,7 @@ export default function HomePage() {
                         Child Education
                     </h2>
                     <div className="space-y-20">
-                        <div className="flex justify-between text-lg space-x-20">
+                        <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
 
                             <div className="space-y-3">
                                 <h2 className="text-4xl text-[#1f8cad]">Primary School Education</h2>
@@ -97,22 +99,22 @@ export default function HomePage() {
                                 </button>
                             </div>
                             <Image 
-                                className="rounded w-full" 
-                                src={educationImage1}
+                                className="rounded w-full hidden xl:flex" 
+                                src={educationImage3}
                             />
 
                         </div>
 
-                        <div className="flex justify-between text-lg space-x-20">
+                        <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
                             <Image 
-                                className="rounded w-full" 
+                                className="rounded w-full hidden xl:flex" 
                                 src={educationImage1}
                             />
 
                             <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Primary School Education</h2>
+                                <h2 className="text-4xl text-[#1f8cad]">Secondary School Education</h2>
                                 <p className="text-lg">
-                                    Kyangwali refugee camp alone is host to 113,000 refugees, of whom 82% are women & children and over 50% are of school going age, yet in 2018 only 17,172 children were attending school (UNHCR, 2018). The 14 primary schools aided by the United Nations (UN) to serve over 30,000 children are overcrowded by over 200 per class attended to by one teacher. The facilities are clearly inadequate & unhygienic. The children walk long distances to learn, lack feeding and psychosocial support programs due to limited economic opportunities or dependency on the World Food Programme, with each head in the family receiving only $8 monthly for food.
+                                    About 17,544 refugee children in Kyangwali refugee settlement are attending secondary education (UNHCR, 2018). There is only one secondary school located at the extreme end of the refugee camp, also shared between refugees and the host community. The long distance and other related problems lead to high school drop-out especially for the girls. The classrooms are overcrowded which affects the quality of teaching leading to slow or poor learning. The school curriculum in Uganda is strongly based on memorization, students do not fully realize their potential with vital skills to thrive in the community.
                                 </p>
                                 <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
                                     <Link href='/primary-education'>
@@ -123,12 +125,12 @@ export default function HomePage() {
 
                         </div>
 
-                        <div className="flex justify-between text-lg space-x-20">
+                        <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
 
                             <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Primary School Education</h2>
+                                <h2 className="text-4xl text-[#1f8cad]">University Preparation Program</h2>
                                 <p className="text-lg">
-                                    Kyangwali refugee camp alone is host to 113,000 refugees, of whom 82% are women & children and over 50% are of school going age, yet in 2018 only 17,172 children were attending school (UNHCR, 2018). The 14 primary schools aided by the United Nations (UN) to serve over 30,000 children are overcrowded by over 200 per class attended to by one teacher. The facilities are clearly inadequate & unhygienic. The children walk long distances to learn, lack feeding and psychosocial support programs due to limited economic opportunities or dependency on the World Food Programme, with each head in the family receiving only $8 monthly for food.
+                                    University education for conflict-affected students is nearly impossible due to financial aid and admission difficulties for these students. We identify and provide college preparation support to potential students. This foundation connects these high school graduates to different college scholarship programs. We partner with scholarship programs such as the Mastercard Foundation Scholars Program (MCFSP), African Leadership Academy, universities like Bugema university for university education
                                 </p>
                                 <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
                                     <Link href='/primary-education'>
@@ -137,22 +139,22 @@ export default function HomePage() {
                                 </button>
                             </div>
                             <Image 
-                                className="rounded w-full" 
-                                src={educationImage1}
+                                className="rounded w-full hidden xl:flex" 
+                                src={educationImage2}
                             />
 
                         </div>
 
-                        <div className="flex justify-between text-lg space-x-20">
+                        <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
                             <Image 
-                                className="rounded w-full" 
+                                className="rounded w-full hidden xl:flex" 
                                 src={educationImage1}
                             />
 
                             <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Primary School Education</h2>
+                                <h2 className="text-4xl text-[#1f8cad]">Scholarships</h2>
                                 <p className="text-lg">
-                                    Kyangwali refugee camp alone is host to 113,000 refugees, of whom 82% are women & children and over 50% are of school going age, yet in 2018 only 17,172 children were attending school (UNHCR, 2018). The 14 primary schools aided by the United Nations (UN) to serve over 30,000 children are overcrowded by over 200 per class attended to by one teacher. The facilities are clearly inadequate & unhygienic. The children walk long distances to learn, lack feeding and psychosocial support programs due to limited economic opportunities or dependency on the World Food Programme, with each head in the family receiving only $8 monthly for food.
+                                    Our foundation's Scholarship refers to the financial or material support given to students in Primary school, Secondary school or at the University in form of Education fees, provision of scholastic material, accommodation, guidance and mentorship among others, acquired from this foundation or through our partnerships to enable the students successfully realize their visions through education. Some of the students shall be given Full scholarship while others will be given Half Scholarship. Depending on the resources available and need assessment of the individual student. In Nalongo Lwokyaza Foundation, we have scholarships at primary school level, secondary school and university level.
                                 </p>
                                 <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
                                     <Link href='/primary-education'>
