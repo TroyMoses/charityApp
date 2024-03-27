@@ -30,7 +30,7 @@ export default function HomePage() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/about" className="link">
+                                    <Link href="/about" className="link bg-[#1f8cad] rounded-md">
                                         About Us
                                     </Link>
                                 </li>
