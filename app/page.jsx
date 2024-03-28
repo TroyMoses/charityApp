@@ -92,7 +92,7 @@ export default function HomePage() {
 
             <section className="fullContainer" id="aboutSection">
                 <div className="container">
-                    <h2 className="sectionTitle">
+                    <h2 className="sectionTitle text-[#1f8cad]">
                         About Us
                     </h2>
                     <p className="text-lg font-normal">
@@ -147,7 +147,7 @@ export default function HomePage() {
 
             <section className="programs" id="programsSection">
                 <div className="container mx-5">
-                    <h2 className="sectionTitle">
+                    <h2 className="sectionTitle text-[#1f8cad]">
                         More Programs
                     </h2>
 
@@ -215,95 +215,9 @@ export default function HomePage() {
             </section>
             {/* Programs section ends here */}
 
-            <section className="gallery" id="gallerySection">
-                <div className="container">
-                    <div className="sectionTitle">
-                        Gallery
-                    </div>
-
-                    <div className="galleryContainer">
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage1} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage2} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage3} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage4} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage5} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage6} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage7} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                        <div className="item">
-                            <span className="title">
-                                Image Title
-                            </span>
-                            <Image src={galleryImage8} className="galleryImage"/>
-                        </div>
-                        {/* Item ends here */}
-
-                    </div>
-
-                    <div className="text-center mt-8">
-                        <button className="bg-[#1f8cad] text-white px-3 py-2 rounded">
-                            <Link href="/gallery">
-                                Explore Our Gallery
-                            </Link>
-                        </button>
-                    </div>
-
-                </div>
-            </section>
-            {/* Gallery section ends here */}
-
             <section className="donate" id="donateSection">
                 <div className="container mx-5">
-                    <h2 className="sectionTitle">
+                    <h2 className="sectionTitle text-[#1f8cad]">
                         Make A Donation
                     </h2>
 
