@@ -196,7 +196,7 @@ export default function HomePage() {
                         className="rounded-md pb-5" 
                         alt="Logo Image"/>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam excepturi aliquid vitae rem voluptate beatae accusantium nulla
+                            For 15 years, we have committed to providing access to quality education for volunarable yet talented refugees. Donate today and help us create more refugee change makers like Ntakamaze Nziyonvira.
                         </p>
                         <input 
                             type="text" 
