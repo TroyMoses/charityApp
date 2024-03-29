@@ -81,7 +81,7 @@ export default function HomePage() {
                     <p className="text-lg">
                         For 15 years, we have committed to providing access to quality education for volunarable yet talented refugees. Donate today and help us create more refugee change makers like Ntakamaze Nziyonvira.
                     </p>
-                    <button className="mb-5">
+                    <button className="mb-5 hover:bg-[#197996]">
                         <Link href="#donateSection">
                             <span className="text-lg">Sponsor A Child Now</span>
                         </Link>
@@ -103,7 +103,7 @@ export default function HomePage() {
                         Whether you're a passionate volunteer, a generous donor, or simply someone who believes in a better tomorrow, we welcome you to join our movement. Together, we can create a lasting positive impact on the lives of refugee children.
                     </p>
                     <div className="text-center mt-8">
-                        <button className="bg-[#1f8cad] text-white px-3 py-2 rounded">
+                        <button className="bg-[#1f8cad] hover:bg-[#197996] text-white px-3 py-2 rounded">
                             <Link href="/about">
                                 Explore More About Us
                             </Link>
@@ -135,7 +135,7 @@ export default function HomePage() {
                         <p className="text-lg">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iusto officia nam, omnis necessitatibus delectus aspernatur sequi, blanditiis voluptatibus reprehenderit quis pariatur, corporis consequuntur dicta sapiente? Consequuntur delectus numquam quam.
                         </p>
-                        <button>
+                        <button className="bg-[#1f8cad] hover:translate-x-2 hover:transition-all hover:bg-[#197996]">
                             <Link href="/education">
                                 EXPLORE NOW
                             </Link>
@@ -164,7 +164,7 @@ export default function HomePage() {
                                     <br />Our educational programs provide essential skills and resources, focusing on all education levels levels, literacy, STEM fields, job training. By investing in education, we unlock potential and create pathways to a brighter future. 
                                 </p>
                             </div>
-                            <button className=" w-40">
+                            <button className="hover:bg-[#197996] w-40">
                                 <Link href="/education">
                                     Explore More
                                 </Link>

@@ -406,6 +406,10 @@ header nav ul li .link:hover {
     cursor: pointer;
 }
 
+.donate .boxContainer .box button:hover {
+    background-color: #197996;
+}
+
 .programs .boxContainer .box button {
     position: relative;
     left: 50%;
@@ -418,6 +422,10 @@ header nav ul li .link:hover {
     border: 0;
     outline: none;
     cursor: pointer;
+}
+
+.programs .boxContainer .box button:hover {
+    background-color: #197996;
 }
 
 
@@ -474,6 +482,10 @@ header nav ul li .link:hover {
     font-weight: bold;
     font-size: 14px;
     outline: none;
+}
+
+.education .educationContainer button:hover {
+    background-color: #197996;
 }
 
 /* Education section end */
@@ -551,10 +563,19 @@ header nav ul li .link:hover {
     color: #fff;
 }
 
+.join button.joinNow:hover {
+    background-color: #272626;
+}
+
 .join button.adoptBtn {
     background-color: #efefef;
     color: #575454;
 }
+
+.join button.adoptBtn:hover {
+    background-color: #c5c1c1;
+}
+
 
 /* Join us section ends here */
 

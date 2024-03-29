@@ -71,11 +71,6 @@ export default function HomePage() {
                     <p className="text-lg">
                         Our foundation is committed to paying particular attention to children and youth within their programs who have suffered from violence and trauma, and aspires to sustain support for young people who have suffered trauma. Nalongo Lwokyaza Foundation also recognizes the power of functional education as a critical part of healing conflict and creating social cohesion in communities.
                     </p>
-                    <button className="mb-5">
-                        <Link href="#aboutSection">
-                            JOIN US NOW
-                        </Link>
-                    </button>
                 </div>
             </div>
             {/* Home section ends here */}
@@ -123,7 +118,9 @@ export default function HomePage() {
                         </div>
                         
                     </div>
-                    <div className="cards text-lg flex flex-col md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-4 mt-8 font-semibold">
+                    <div 
+                        className="cards text-lg flex flex-col md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-4 mt-8 font-semibold"
+                    >
 
                         <div className="donationBox">
                             <div className="title text-[#1f8cad]">
