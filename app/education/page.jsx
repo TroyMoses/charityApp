@@ -92,8 +92,8 @@ export default function HomePage() {
                                 <p className="text-lg">
                                     Kyangwali refugee camp alone is host to 113,000 refugees, of whom 82% are women & children and over 50% are of school going age, yet in 2018 only 17,172 children were attending school (UNHCR, 2018). The 14 primary schools aided by the United Nations (UN) to serve over 30,000 children are overcrowded by over 200 per class attended to by one teacher. The facilities are clearly inadequate & unhygienic. The children walk long distances to learn, lack feeding and psychosocial support programs due to limited economic opportunities or dependency on the World Food Programme, with each head in the family receiving only $8 monthly for food.
                                 </p>
-                                <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
-                                    <Link href='/primary-education'>
+                                <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
+                                    <Link href='/education'>
                                         Learn More
                                     </Link>
                                 </button>
@@ -116,8 +116,8 @@ export default function HomePage() {
                                 <p className="text-lg">
                                     About 17,544 refugee children in Kyangwali refugee settlement are attending secondary education (UNHCR, 2018). There is only one secondary school located at the extreme end of the refugee camp, also shared between refugees and the host community. The long distance and other related problems lead to high school drop-out especially for the girls. The classrooms are overcrowded which affects the quality of teaching leading to slow or poor learning. The school curriculum in Uganda is strongly based on memorization, students do not fully realize their potential with vital skills to thrive in the community.
                                 </p>
-                                <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
-                                    <Link href='/primary-education'>
+                                <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
+                                    <Link href='/education'>
                                         Learn More
                                     </Link>
                                 </button>
@@ -132,8 +132,8 @@ export default function HomePage() {
                                 <p className="text-lg">
                                     University education for conflict-affected students is nearly impossible due to financial aid and admission difficulties for these students. We identify and provide college preparation support to potential students. This foundation connects these high school graduates to different college scholarship programs. We partner with scholarship programs such as the Mastercard Foundation Scholars Program (MCFSP), African Leadership Academy, universities like Bugema university for university education
                                 </p>
-                                <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
-                                    <Link href='/primary-education'>
+                                <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
+                                    <Link href='/education'>
                                         Learn More
                                     </Link>
                                 </button>
@@ -156,8 +156,8 @@ export default function HomePage() {
                                 <p className="text-lg">
                                     Our foundation's Scholarship refers to the financial or material support given to students in Primary school, Secondary school or at the University in form of Education fees, provision of scholastic material, accommodation, guidance and mentorship among others, acquired from this foundation or through our partnerships to enable the students successfully realize their visions through education. Some of the students shall be given Full scholarship while others will be given Half Scholarship. Depending on the resources available and need assessment of the individual student. In Nalongo Lwokyaza Foundation, we have scholarships at primary school level, secondary school and university level.
                                 </p>
-                                <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
-                                    <Link href='/primary-education'>
+                                <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
+                                    <Link href='/education'>
                                         Learn More
                                     </Link>
                                 </button>
