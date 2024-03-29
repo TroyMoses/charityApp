@@ -101,8 +101,8 @@ export default function ProgramsPage() {
                                 <p className="text-lg">
                                     We have a youth hub for running our activities in the Kyangwali refugee settlement. This is also known as Lwokyaza New Site, CONES-a farming or agriculture hub. With no land for the refugees to practice subsistence farming-sole means of dependence, we have established a demonstration farm on a plot of over 10 acres of land. We have also introduced organic farming which will be an agribusiness enterprise to establish better farming methods and focus on solving this problem. It will involve applying animal manure to naturally sustain and maintain soil fertility and avoid other long term agronomic problems.
                                 </p>
-                                <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
-                                    <Link href='/primary-education'>
+                                <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
+                                    <Link href='/programs'>
                                         Learn More
                                     </Link>
                                 </button>
@@ -125,8 +125,8 @@ export default function ProgramsPage() {
                                 <p className="text-lg">
                                     Targets Congolese refugee widows living in Kyangwali with orphans to feed and educate. Our foundation provides small loans to such women who have projects such as; animal rearing, poultry, farming, small retail shops and those selling food items every market day. 30 widows received the loan since 2017 and 75 children attend school through this program. To reduce challenges such as failing to pay back loans, we built a vocational training center where women will meet more skilled and experienced business people, learn from their past mistakes as well as identify viable businesses in the refugee community.
                                 </p>
-                                <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
-                                    <Link href='/primary-education'>
+                                <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
+                                    <Link href='/programs'>
                                         Learn More
                                     </Link>
                                 </button>
@@ -141,8 +141,8 @@ export default function ProgramsPage() {
                                 <p className="text-lg">
                                     University education for conflict-affected students is nearly impossible due to financial aid and admission difficulties for these students. We identify and provide college preparation support to potential students. This foundation connects these high school graduates to different college scholarship programs. We partner with scholarship programs such as the Mastercard Foundation Scholars Program (MCFSP), African Leadership Academy, universities like Bugema university for university education
                                 </p>
-                                <button className="bg-[#1f8cad] px-3 py-1 text-white rounded">
-                                    <Link href='/primary-education'>
+                                <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
+                                    <Link href='/programs'>
                                         Learn More
                                     </Link>
                                 </button>
@@ -187,7 +187,7 @@ export default function ProgramsPage() {
                         className="rounded-md pb-5" 
                         alt="Logo Image"/>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam excepturi aliquid vitae rem voluptate beatae accusantium nulla
+                            For 15 years, we have committed to providing access to quality education for volunarable yet talented refugees. Donate today and help us create more refugee change makers like Ntakamaze Nziyonvira.
                         </p>
                         <input 
                             type="text" 
